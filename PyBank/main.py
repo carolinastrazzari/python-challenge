@@ -45,10 +45,10 @@ with open(pto_hours_csv, 'r') as csvfile:
         result = "Financial Analysis\n"
         result += "----------------------------\n"
         result += "Total Months: "+str(total_month)+"\n"
-        result += "Total: "+str(total)+"\n"
-        result += "Average Change: "+str(round(array_sum(list_changes)/len(list_changes), 2))+"\n"
-        result += "Greatest Increase in Profits: "+list_month[list_changes.index(max(list_changes))]+" ("+str(max(list_changes))+")\n"
-        result +="Greatest Decrease in Profits: "+list_month[list_changes.index(min(list_changes))] +" ("+str(min(list_changes))+")\n"
+        result += "Total: $"+str(total)+"\n"
+        result += "Average Change: $"+str(round(array_sum(list_changes)/len(list_changes), 2))+"\n"
+        result += "Greatest Increase in Profits: "+list_month[list_changes.index(max(list_changes))]+" ($"+str(max(list_changes))+")\n"
+        result +="Greatest Decrease in Profits: "+list_month[list_changes.index(min(list_changes))] +" ($"+str(min(list_changes))+")\n"
         print(result)
 
 # Open the file using "write" mode. Specify the variable to hold the contents
